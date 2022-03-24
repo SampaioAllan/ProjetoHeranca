@@ -23,6 +23,28 @@
                 {
                     static void Main(string[] args)
                     {
+
+                        var numeros = new List<int>();
+                        var numerosMaisDez = new List<int>();
+                        var strings = new List<string>();
+                        for(var contador = 0; contador<10; contador++)
+                        {
+                            numeros.Add(contador);
+                            numeros.Add(contador+10);
+                            numeros.Add(contador.ToString());
+                        }
+                        //add uma lista dentro de outra
+                        numeros.AddRange(numerosMaisDez);
+                        //remover esse valor de uma lista independente da pocisão
+                        numeros.Remove(5);
+                        //remover valor de acordo com a posição
+                        numeros.RemoveAt(5);
+                        //remover todos item de acordo com a expressão
+                        numero.RemoveAll(lixo => lixo != 3);
+                        //
+                        numeros.RemoveRange(0, 5)
+
+
                         Console.WriteLine("Qual o nome do cliente?");
                         string cliente=Console.ReadLine();
                         
